@@ -1,0 +1,10 @@
+# packages used for this project
+librosa
+#csv
+keras
+pandas
+numpy
+matplotlib
+sklearn
+IPython
+tensorflow
