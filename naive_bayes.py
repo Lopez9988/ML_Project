@@ -15,6 +15,7 @@ import random
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.naive_bayes import GaussianNB
+
 #Keras
 import keras
 
@@ -54,11 +55,8 @@ for g in genres:
 '''
 
 #Reading the dataset and dropping unnecessary columns
-data = pd.read_csv('data.csv')
+data = pd.read_csv('features.csv')
 data.head() 
-
-data = data.drop(['filename'],axis=1)
-data.head()
 
 #Encoding genres into integers
 genre_list = data.iloc[:, -1]
